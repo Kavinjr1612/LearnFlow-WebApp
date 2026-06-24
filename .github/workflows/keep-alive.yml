@@ -14,4 +14,4 @@ jobs:
         run: |
           curl -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
                -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}" \
-               -X GET "${{ secrets.SUPABASE_URL }}/rest/v1/users?limit=1"
+               -X GET "${{ secrets.SUPABASE_URL }}/rest/v1/profiles?select=id&limit=1"
